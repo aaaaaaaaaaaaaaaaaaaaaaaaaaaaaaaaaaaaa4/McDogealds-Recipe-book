@@ -9,7 +9,7 @@
     <br>
     <div class="things">
       {% for thing in theitems %}
-      <div class="card" onClick="location.replace('/things/{{ thing.id }}')">
+      <div class="card" onClick="location.replace('/things/{{ thing.ide }}')">
         <img src="{{ thing.url }}" alt="The product" style="width:100%">
         <h1>{{ thing.thing }}</h1>
         <p class="price">${{ thing.price }}</p>
