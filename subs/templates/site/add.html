@@ -1,0 +1,15 @@
+{% extends "site/layout.html" %}
+
+{% block title %}
+    Jersey ch1ck3n's subs
+{% endblock %}
+
+{% block body %}
+    <h1>Add Recipe</h1>
+    <form method="post">
+    {% csrf_token %}
+    {{ form }}<br>
+    <button type="submit">Submit!</button>
+    </form>
+    <h3><a href="/things"><-- all recipes</a>
+{% endblock %}
