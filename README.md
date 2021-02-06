@@ -16,4 +16,4 @@ once you have the command line in the directory, run `python manage.py runserver
 
 ## Online web version
 
-McDogealds is now online! visit here: [https://mcdogealds-recipe-book.ch1ck3n.repl.co/things](https://mcdogealds-recipe-book.ch1ck3n.repl.co/things/)
+McDogealds is now online! visit here: [https://mcdogealds-recipe-book.ch1ck3n.repl.co](https://mcdogealds-recipe-book.ch1ck3n.repl.co)
