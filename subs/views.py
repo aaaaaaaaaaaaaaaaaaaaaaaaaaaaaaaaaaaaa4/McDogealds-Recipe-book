@@ -49,7 +49,7 @@ class AddRecipeForm(forms.Form):
     recipe = forms.CharField(label="",  widget=forms.Textarea(attrs={'style': 'margin-top: 0px; margin-bottom: 0px; height: 184px;', 'placeholder': "Recipe"}))
     price = forms.IntegerField(label="", widget=forms.TextInput(attrs={'placeholder': 'Price'}))
     id = forms.IntegerField(label="", widget=forms.TextInput(attrs={'placeholder': 'ID'}))
-    url = forms.IntegerField(label="", widget=forms.TextInput(attrs={'placeholder': 'Image Url'}))
+    url = forms.CharField(label="", widget=forms.TextInput(attrs={'placeholder': 'Image Url'}))
 def add(request):
     if request.method == "POST":
         form = AddRecipeForm(request.POST)
