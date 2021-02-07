@@ -28,6 +28,16 @@ A command line
 
 McDogealds Recipe book requires **Python 3.6 or higher**. Download this repository onto your computer and open powershell or your command line into the repository directory. 
 
+Run 
+
+```
+pip install django
+```
+check that you have a python version of 3.6 or more.
+```
+python -V
+```
+
 once you have the command line in the directory, run `python manage.py runserver`. open the url [http://127.0.0.1:8000/](http://127.0.0.1:8000/) in your browser, and the recipes should be there.
 
 ## Online web version
