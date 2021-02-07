@@ -40,3 +40,7 @@ def add(request):
     return render(request, "site/add.html", {
         "form": AddRecipeForm()
     })
+def tools(request):
+    return render(request, "site/tools.html", {"theitems": items})
+def savecode(request):
+    return HttpResponse("items = " + str(items))

@@ -1,0 +1,26 @@
+{% extends "site/layout.html" %}
+
+{% block title %}
+    Jersey ch1ck3n's subs
+{% endblock %}
+
+{% block body %}
+    <h3>Recipe for {{ item.thing }}</h3>
+    <br>
+    <div class="things">
+      {% for thing in theitems %}
+      <div class="card" onClick="location.replace('/things/{{ thing.ide }}')">
+        <img src="{{ thing.url }}" alt="The product" style="width:100%">
+        <h1>{{ thing.thing }}</h1>
+        <p class="price">${{ thing.price }}</p>
+        <p>{{ thing.about }}</p>
+        <button><a href="/things/{{ thing.id }}">View recipe</a></button>
+      </div>
+      {% endfor %}
+    </div><br>
+    <br>
+    <h1>Tools</h1>
+    <h3><a href="{% url 'savecode' %}"> Get save code </a>
+    This allows you to save your current recipe list forever!</h3>
+    <h3><a href="/things"><-- all recipes</a>
+{% endblock %}

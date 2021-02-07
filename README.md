@@ -48,7 +48,7 @@ once you have the command line in the directory, run `python manage.py runserver
 
 ## Online web version
 
-McDogealds is now online! visit here: [https://mcdogealds-recipe-book.ch1ck3n.repl.co](https://mcdogealds-recipe-book.ch1ck3n.repl.co)
+McDogealds is now online! visit here: [https://mcdogealds-recipe-book.ch1ck3n.repl.co](https://mcdogealds-recipe-book.ch1ck3n.repl.co) **WARNING: it's outdated. not recommended.**
 
 ## Links
 
@@ -60,3 +60,10 @@ McDogealds is now online! visit here: [https://mcdogealds-recipe-book.ch1ck3n.re
   Visit `/things/{id}` where id is either 1, 2, 3, 4, and so on.
 #### Add recipe
   Visit `/add` to add a recipe.
+
+## Tips & tricks
+
+#### Save current recipe list forever
+
+  Visit `/tools/savecode`. copy the entire page.
+  Go to `/subs/items.py` (in the code folder, not the web directory) and replace the entire file with the text you just copied.

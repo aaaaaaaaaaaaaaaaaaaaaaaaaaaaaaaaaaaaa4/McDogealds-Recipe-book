@@ -23,5 +23,7 @@ urlpatterns = [
     path("things", views.things, name="things"),
     path("things/<int:recipeid>", views.recipe, name="recipe"),
     path('admin/', admin.site.urls),
-    path('add', views.add, name="add")
+    path('add', views.add, name="add"),
+    path('tools', views.tools, name="tools"),
+    path('tools/savecode', views.savecode, name="savecode")
 ]
