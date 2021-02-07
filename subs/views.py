@@ -28,7 +28,7 @@ items  = [{
                 "ide": 3
              },
              {
-                "thing": "McDogealds's Baconator",
+                "thing": "Baconator",
                 "price": 1,
                 "about": "The Baconator sandwich is a cheeseburger sold by the international fast-food restaurant chain McDogealds",
                 "url": "https://static.wikia.nocookie.net/bacon/images/3/3a/New_baconator.jpg/revision/latest/scale-to-width-down/340?cb=20171126021042",
