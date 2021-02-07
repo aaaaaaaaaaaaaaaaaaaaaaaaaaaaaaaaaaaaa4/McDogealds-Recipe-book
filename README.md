@@ -14,6 +14,16 @@ A recipe app, made in django , python 3.9.
 
 Visit `subs/urls.py` for all available urls.
 
+### Dependencies:
+
+Python 3.6+
+
+Django 3
+
+A computer
+
+A command line
+
 ## How to use
 
 McDogealds Recipe book requires **Python 3.6 or higher**. Download this repository onto your computer and open powershell or your command line into the repository directory. 
