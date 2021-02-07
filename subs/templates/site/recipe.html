@@ -5,8 +5,8 @@
 {% endblock %}
 
 {% block body %}
-    <h3>Recipe for {{ item.thing }}</h3>
     <br>
+    <h3>Recipe for {{ item.thing }}</h3>
     <div class="things">
       {% for thing in theitems %}
       <div class="card" onClick="location.replace('/things/{{ thing.ide }}')">
