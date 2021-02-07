@@ -8,6 +8,12 @@ McDogealds is an imaginary international fast food chain.
 
 the owners of McDogealds, Landon flop (@ch1ck3n-byte) and Lord Technodoggo (@jondoglover) have finally released the recipes for their ground-breaking food!
 
+**Developer view:**
+
+A recipe app, made in django , python 3.9.
+
+Visit `subs/urls.py` for all available urls.
+
 ## How to use
 
 McDogealds Recipe book requires **Python 3.6 or higher**. Download this repository onto your computer and open powershell or your command line into the repository directory. 
