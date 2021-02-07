@@ -17,3 +17,14 @@ once you have the command line in the directory, run `python manage.py runserver
 ## Online web version
 
 McDogealds is now online! visit here: [https://mcdogealds-recipe-book.ch1ck3n.repl.co](https://mcdogealds-recipe-book.ch1ck3n.repl.co)
+
+## Links
+
+#### All recipes
+
+  Visit `/things` for all recipes.
+  
+#### View recipe
+  Visit `/things/{id}` where id is either 1, 2, 3, 4, and so on.
+#### Add recipe
+  Visit `/add` to add a recipe.
