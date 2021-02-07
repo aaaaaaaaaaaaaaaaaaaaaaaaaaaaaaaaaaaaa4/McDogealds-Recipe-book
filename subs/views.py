@@ -4,6 +4,7 @@ from django import forms
 from django.utils.html import strip_tags
 from django.shortcuts import redirect
 from . import items
+import markdown
 
 items = items.items
 
@@ -30,7 +31,7 @@ def add(request):
             url = strip_tags(form.cleaned_data["url"])
             price = int(strip_tags(form.cleaned_data["price"]))
             newid = items[-1]["ide"]+1
-            items.append({"thing": title, "about": about, "recipe": recipe, "price": price, "ide": newid, "url": url})
+            items.append({"thing": title, "about": about, "recipe": markdown.markdown(recipe), "price": price, "ide": newid, "url": url})
             return redirect('/things')
         else:
             return render(request, "site/add.html", {

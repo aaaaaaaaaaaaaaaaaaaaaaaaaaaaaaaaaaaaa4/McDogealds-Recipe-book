@@ -21,6 +21,6 @@
     <br>
     <h1>The recipe</h1>
     <h3>Recipe for {{ item.thing }}</h3>
-    <h4>{{ item.recipe }}</h4>
+    <h4>{{ item.recipe|safe }}</h4>
     <h3><a href="/things"><-- all recipes</a>
 {% endblock %}
