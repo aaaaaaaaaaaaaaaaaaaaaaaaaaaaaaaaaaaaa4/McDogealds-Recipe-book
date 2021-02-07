@@ -20,15 +20,21 @@ Python 3.6+
 
 Django 3
 
+Markdown
+
+```
+pip install markdown
+```
+
 A computer
 
 A command line
 
 ## How to use
 
-McDogealds Recipe book requires **Python 3.6 or higher**. Download this repository onto your computer and open powershell or your command line into the repository directory. 
+McDogealds Recipe book requires **Python 3.6 or higher**. Download this repository onto your computer and open powershell or your command line into the repository directory.
 
-Run 
+Run
 
 ```
 pip install django
@@ -49,7 +55,7 @@ McDogealds is now online! visit here: [https://mcdogealds-recipe-book.ch1ck3n.re
 #### All recipes
 
   Visit `/things` for all recipes.
-  
+
 #### View recipe
   Visit `/things/{id}` where id is either 1, 2, 3, 4, and so on.
 #### Add recipe
