@@ -25,7 +25,7 @@ SECRET_KEY = 'owfxaei%pvt!xo*d^t71wj7*i+-a-w9r@s!j!fix^tztnj^&mf'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['mcdogealds-recipe-book-1.ch1ck3n.repl.co', 'mcdogealds-recipe-book.ch1ck3n.repl.co']
+ALLOWED_HOSTS = ['mcdogealds-recipe-book-1.ch1ck3n.repl.co', 'mcdogealds-recipe-book.ch1ck3n.repl.co', '3c11d9a6-7bf6-448d-9e57-6c20515e0085.id.replitusercontent.com']
 
 
 # Application definition

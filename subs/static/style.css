@@ -58,3 +58,11 @@ textarea {
 input{
     display: block;
 }
+h1 {
+  font-family: Lord Technodoggo X;
+  font-size: 4em;
+}
+@font-face {
+  font-family: Lord Technodoggo X;
+  src: url("Lord Technodoggo 2.0 Font.ttf");
+}

@@ -3,6 +3,8 @@ from django.shortcuts import render
 from django import forms
 from django.utils.html import strip_tags
 from django.shortcuts import redirect
+from django.core.files.base import ContentFile
+from django.core.files.storage import default_storage
 from . import items
 import markdown
 
@@ -32,6 +34,10 @@ def add(request):
             price = int(strip_tags(form.cleaned_data["price"]))
             newid = items[-1]["ide"]+1
             items.append({"thing": title, "about": about, "recipe": markdown.markdown(recipe), "price": price, "ide": newid, "url": url})
+            filename = "items.txt"
+            wr = open("items.py", 'w')
+            wr.write(str(items))
+            wr.close()
             return redirect('/things')
         else:
             return render(request, "site/add.html", {
