@@ -1,7 +1,7 @@
 {% extends "site/layout.html" %}
 
 {% block title %}
-    Jersey ch1ck3n's subs
+    McDogealds Recipe book
 {% endblock %}
 
 {% block body %}
@@ -9,6 +9,7 @@
     <h3>Recipe for {{ item.thing }}</h3><br>
     <br>
     <div class="container">
+      <img src="{{ item.url }}" style="width:300px">
     <h4>{{ item.recipe|safe }}</h4>
     </div>
     <h3><a href="/things"><-- all recipes</a>
@@ -17,7 +18,7 @@
         {% for thing in theitems %}
         <div class="card" onClick="location.replace('/things/{{ thing.ide }}')">
           <img src="{{ thing.url }}" alt="The product" style="width:100%">
-          <h1>{{ thing.thing }}</h1>
+          <h3>{{ thing.thing }}</h3>
           <p class="price">${{ thing.price }}</p>
           <p>{{ thing.about }}</p>
           <button><a href="/things/{{ thing.id }}">View recipe</a></button>

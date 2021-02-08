@@ -6,10 +6,17 @@
   font-family: arial;
   height: 600px;
   margin: auto;
+  overflow-wrap: break-word;
 }
-::-webkit-scrollbar {
+::-webkit-scrollbar:horizontal {
     display: none;
 }
+@media screen and (max-width: 1080px) {
+    .card {
+        max-width: //landon takes care of this
+    }
+}
+
 
 .price {
   color: grey;
@@ -36,6 +43,7 @@
 .things{
   display: flex;
   overflow-x: auto;
+  flex-wrap: wrap;
 }
 h1 {
     margin-top: 0px;

@@ -1,7 +1,7 @@
 {% extends "site/layout.html" %}
 
 {% block title %}
-    Jersey ch1ck3n's subs
+    McDogealds Recipe book
 {% endblock %}
 
 {% block body %}
@@ -12,11 +12,20 @@
     {% for item in items %}
     <div class="card" onClick="location.replace('/things/{{ item.ide }}')">
       <img src="{{ item.url }}" alt="The product" style="width:100%">
-      <h1>{{ item.thing }}</h1>
+      <h3>{{ item.thing }}</h3>
       <p class="price">${{ item.price }}</p>
       <p>{{ item.about }}</p>
       <button><a href="/things/{{ item.ide }}">View recipe</a></button>
     </div>
     {% endfor %}
     </div>
+
+    <script>
+      var cards = $(".card");
+      for(var i = 0; i < cards.length; i++){
+        var target = Math.floor(Math.random() * cards.length -1) + 1;
+        var target2 = Math.floor(Math.random() * cards.length -1) +1;
+        cards.eq(target).before(cards.eq(target2));
+      }
+  </script>
 {% endblock %}
