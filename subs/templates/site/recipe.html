@@ -6,23 +6,22 @@
 
 {% block body %}
     <br>
-    <h3>Recipe for {{ item.thing }}</h3>
-    <div class="things">
-      {% for thing in theitems %}
-      <div class="card" onClick="location.replace('/things/{{ thing.ide }}')">
-        <img src="{{ thing.url }}" alt="The product" style="width:100%">
-        <h1>{{ thing.thing }}</h1>
-        <p class="price">${{ thing.price }}</p>
-        <p>{{ thing.about }}</p>
-        <button><a href="/things/{{ thing.id }}">View recipe</a></button>
-      </div>
-      {% endfor %}
-    </div><br>
+    <h3>Recipe for {{ item.thing }}</h3><br>
     <br>
     <div class="container">
-    <h1>The recipe</h1>
-    <h3>Recipe for {{ item.thing }}</h3>
     <h4>{{ item.recipe|safe }}</h4>
     </div>
     <h3><a href="/things"><-- all recipes</a>
+      <h2>Or, check out these recipes you might like!</h2>
+      <div class="things">
+        {% for thing in theitems %}
+        <div class="card" onClick="location.replace('/things/{{ thing.ide }}')">
+          <img src="{{ thing.url }}" alt="The product" style="width:100%">
+          <h1>{{ thing.thing }}</h1>
+          <p class="price">${{ thing.price }}</p>
+          <p>{{ thing.about }}</p>
+          <button><a href="/things/{{ thing.id }}">View recipe</a></button>
+        </div>
+        {% endfor %}
+      </div>
 {% endblock %}
