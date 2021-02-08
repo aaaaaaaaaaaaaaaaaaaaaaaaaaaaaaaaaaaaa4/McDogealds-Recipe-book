@@ -19,8 +19,10 @@
       {% endfor %}
     </div><br>
     <br>
+    <div class="container">
     <h1>The recipe</h1>
     <h3>Recipe for {{ item.thing }}</h3>
     <h4>{{ item.recipe|safe }}</h4>
+    </div>
     <h3><a href="/things"><-- all recipes</a>
 {% endblock %}
