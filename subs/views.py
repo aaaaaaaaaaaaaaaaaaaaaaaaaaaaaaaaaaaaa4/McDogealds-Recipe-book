@@ -34,9 +34,8 @@ def add(request):
             price = int(strip_tags(form.cleaned_data["price"]))
             newid = items[-1]["ide"]+1
             items.append({"thing": title, "about": about, "recipe": markdown.markdown(recipe), "price": price, "ide": newid, "url": url})
-            filename = "items.txt"
-            wr = open("items.py", 'w')
-            wr.write(str(items))
+            wr = open("subs/items.py", 'w')
+            wr.write("items = " + str(items))
             wr.close()
             return redirect('/things')
         else:
