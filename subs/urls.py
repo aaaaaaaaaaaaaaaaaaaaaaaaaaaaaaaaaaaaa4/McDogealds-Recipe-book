@@ -25,5 +25,5 @@ urlpatterns = [
     path('add', views.add, name="add"),
     path('tools', views.tools, name="tools"),
     path('tools/savecode', views.savecode, name="savecode"),
-
+    path('search', views.search, name="search")
 ]
