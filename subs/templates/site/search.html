@@ -1,0 +1,41 @@
+{% extends "site/layout.html" %}
+
+{% block title %}
+    Doge Doggo Luxury Foods
+{% endblock %}
+
+{% block body %}
+    <h3></h3>
+    <br>
+    <h2>Search</h2>
+      <div class="form-group has-search">
+    <span class="fa fa-search form-control-feedback"></span>
+    <input type="text" class="form-control" placeholder="Search" id="q" value="" onchange="rescan()">
+  </div>
+    <div class="things">
+      {% for thing in theitems %}
+      <div class="card" onClick="location.replace('/things/{{ thing.ide }}')">
+        <img src="{{ thing.url }}" alt="The product" style="width:100%" onerror="imgError(this);">
+        <h3>{{ thing.thing }}</h3>
+        <h5 class="price">${{ thing.price }}</h5>
+        <p>{{ thing.about }}</p>
+        <button><a href="/things/{{ thing.id }}">View recipe</a></button>
+      </div>
+      {% endfor %}
+    </div><br>
+    <script>
+      function rescan(){
+        $('.card').each(function(i, obj) {
+          console.log($(this).find("h3").text())
+          if(!$(this).find("h3").text().toLowerCase().includes($("#q").val().toLowerCase()) && !$(this).find("p").text().toLowerCase().includes($("#q").val().toLowerCase())){
+            $(this).fadeOut(300)
+          }
+          else{
+            $(this).fadeIn(300)
+          }
+        }); 
+      }
+    </script>
+    <br>
+    <h3><a href="/things"><-- all recipes</a>
+{% endblock %}

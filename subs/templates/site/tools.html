@@ -10,7 +10,7 @@
     
     <div class="things">
       {% for thing in theitems %}
-      <div class="card" onClick="location.replace('/things/{{ thing.ide }}')">
+      <div class="card" onClick="location.replace('/things/{{ thing.ide }}')" onerror="imgError(this);">
         <img src="{{ thing.url }}" alt="The product" style="width:100%">
         <h3>{{ thing.thing }}</h3>
         <p class="price">${{ thing.price }}</p>

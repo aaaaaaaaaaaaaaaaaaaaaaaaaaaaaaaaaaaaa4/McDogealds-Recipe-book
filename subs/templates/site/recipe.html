@@ -9,7 +9,7 @@
     <h3>Recipe for {{ item.thing }}</h3><br>
     <br>
     <div class="container">
-      <img src="{{ item.url }}" style="width:300px">
+      <img src="{{ item.url }}" style="width:300px" onerror="imgError(this);">
     <h4>{{ item.recipe|safe }}</h4>
     </div>
     <h3><a href="/things"><-- all recipes</a>
@@ -17,7 +17,7 @@
       <div class="things">
         {% for thing in theitems %}
         <div class="card" onClick="location.replace('/things/{{ thing.ide }}')">
-          <img src="{{ thing.url }}" alt="The product" style="width:100%">
+          <img src="{{ thing.url }}" alt="The product" style="width:100%" onerror="imgError(this);" onerror="imgError(this);">
           <h3>{{ thing.thing }}</h3>
           <p class="price">${{ thing.price }}</p>
           <p>{{ thing.about }}</p>
